@@ -125,13 +125,14 @@ footer{margin-top:16px;text-align:center;color:var(--muted)}
 #outing-est-cost.low{color:#2b6cb0}
 #outing-est-cost.over{color:#c53030}
 
-/* inspire chips (天赋激活) */
-.inspire-chip{display:inline-flex;align-items:center;gap:8px;padding:6px 8px;border-radius:999px;background:#f3f4f6;border:1px solid #e6e9ef;cursor:pointer;transition:all .12s}
-.inspire-chip:hover{background:#eef6ff;border-color:rgba(43,108,176,0.12)}
-.inspire-chip .chip-label{font-weight:600;color:#334155}
-.inspire-chip.selected{background:linear-gradient(135deg,#e6f2ff, #ffffff);border-color:var(--accent);box-shadow:0 4px 14px rgba(43,108,176,0.06)}
+/* inspire chips (天赋激活) - 统一按钮风格 */
+.inspire-chip{display:inline-flex;align-items:flex-start;gap:8px;padding:10px 12px;border-radius:8px;background:#fff;border:2px solid #e6e9ef;cursor:pointer;transition:all .18s ease;min-width:140px;max-width:280px;flex-direction:column;vertical-align:top}
+.inspire-chip:hover{background:#f7fafc;border-color:rgba(43,108,176,0.25);transform:translateY(-1px);box-shadow:0 4px 12px rgba(43,108,176,0.08)}
+.inspire-chip .chip-label{font-weight:700;color:#2d3748;font-size:14px;margin-bottom:4px;display:block;width:100%}
+.inspire-chip .chip-desc{font-size:12px;color:#718096;line-height:1.5;display:block;width:100%;margin-top:2px}
+.inspire-chip.selected{background:linear-gradient(135deg,#ebf8ff 0%, #ffffff 100%);border-color:var(--accent);box-shadow:0 6px 16px rgba(43,108,176,0.15);transform:translateY(-2px)}
 .inspire-chip input{position:absolute;left:-9999px}
-.inspire-chip.disabled{opacity:0.45;pointer-events:none}
+.inspire-chip.disabled{opacity:0.45;pointer-events:none;filter:grayscale(0.6)}
 
 /* 劝退按钮 - 紧凑设计 */
 .evict-btn {
